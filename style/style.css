@@ -1,5 +1,6 @@
 :root {
   font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
   --regular-50-a: 5rem;
   --regular-45-a: 4.5rem;
   --regular-40-a: 4rem;
@@ -11,10 +12,10 @@
   --regular-10-a: 1rem;
   --regular-5-a: 0.5rem;
   --regular-1-a: 0.1rem;
-  --card-width: 30rem;
+  --card-width: 27rem;
   --card-height: 40rem;
   --card-shadow-transition: 0.5s;
-  --card-shadow-color: rgba(0, 0, 0, 0.1);
+  --card-shadow-color: rgba(0,0,0,0.1);
   --img-width: 80%;
   --testing-border: 2px solid red;
 }
@@ -44,12 +45,12 @@ img {
   width: var(--card-width);
   height: var(--card-height);
   border-radius: var(--regular-20-a);
-  box-shadow: 0px 5px 7px 0px var(--card-shadow-color);
+  box-shadow: 0px 7px 0px -3px var(--card-shadow-color);
   transition: var(--card-shadow-transition);
 }
 
 .card-outfit:hover {
-  box-shadow: 0px 0px 10px 5px var(--card-shadow-color);
+  box-shadow: 0px 4px 14px 0px var(--card-shadow-color);
   transition: var(--card-shadow-transition);
 }
 
@@ -61,7 +62,7 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 4fr 1fr 2fr;
-  background: linear-gradient(rgb(220, 216, 210),rgb(214, 214, 214), #fffdfd);
+  background: linear-gradient(rgb(239, 223, 196), rgb(241, 234, 221));
 
 }
 
@@ -89,7 +90,7 @@ img {
   width: var(--regular-45-a);
   height: var(--regular-45-a);
   border-radius: var(--regular-20-a);
-  background-color: rgb(189, 189, 189);
+  background-color: white;
 }
 
 .card-content-grid-row1--description {
@@ -143,7 +144,6 @@ img {
   grid-template-columns: repeat(4, var(--regular-20-a));
   grid-template-rows: 1fr;
   align-items: center;
-  column-gap: var();
 }
 
 .card-content-grid-row3--like--img {
@@ -152,13 +152,22 @@ img {
   height: var(--regular-20-a);
 }
 
+
 .card-content-grid-row3--comment--img {
   grid-column: 4;
   width: var(--regular-20-a);
   height: var(--regular-20-a);
 }
 
-.card-content-grid-row4
+.card-content-grid-row4 {
+  padding: 0 var(--regular-10-a);
+
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: justify;
+}
 
 @media (max-width: 375px) {
   /* .container {
